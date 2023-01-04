@@ -1,0 +1,192 @@
+@charset "UTF-8";
+
+html {
+  font-size: 100%;
+}
+
+body {
+  color: #2d2d2d;
+  font-family: 'Crimson Text', serif;
+}
+
+img {
+  max-width: 100%;
+}
+
+ul{
+  list-style: none;
+}
+
+a{
+  color: #2d2d2d;
+  text-decoration: none;
+}
+
+/* -----------------------------------------------
+メインヴィジュアル
+----------------------------------------------- */
+
+#mainvisual .main-menu{
+  display: flex;
+  margin-top: 2%;
+  margin-left: 4.6%;
+  font-size: 1.3vw;
+}
+
+#mainvisual .main-menu .menu{
+  display: flex;
+  margin-left: 4.6%; 
+}
+
+#mainvisual .main-menu .menu li{
+  margin-right: 20%;
+}
+
+#mainvisual .images{
+  display: block;
+  align-items: center;
+  text-align: center;
+}
+
+#mainvisual .images img{
+  height: 80%;
+  width: 91%;
+  margin-top: 3.5%;
+}
+
+/* -----------------------------------------------
+ブランド紹介
+----------------------------------------------- */
+
+#brand-overview{
+  display: block;
+  width: 100%;
+  margin-top: 5%;
+}
+
+#brand-overview .images{
+  width: 50%;
+}
+
+#brand-overview .images img{
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+}
+
+#concept{
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#concept .concept-text,
+#work .work-text{
+  width: 50%;
+}
+
+#concept .concept-text .title,
+#work .work-text .title{
+  white-space: nowrap;
+  font-size: 1.9vw;
+}
+
+#concept .concept-text .subtitle,
+#work .work-text .subtitle{
+  margin-top: 2%;
+  width: 40%;
+  font-size: 1.2vw;
+}
+
+#concept .text,
+#work .text{
+  width: 73%;
+  margin-top: 5%;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 1.35vw;
+}
+
+#work{
+  display: flex;
+  flex-direction:row-reverse;
+  align-items: center;
+  text-align: center;
+  width: 70%;
+  margin-top: 5%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* -----------------------------------------------
+フッター
+----------------------------------------------- */
+
+#footer{
+  margin-top: 5%;
+  margin-bottom: 2%;
+  display: flex;
+  justify-content: space-around;
+  font-size: 1.2vw;
+}
+
+/* -----------------------------------------------
+スマホ対応
+----------------------------------------------- */
+
+@media screen and (max-width: 768px){
+
+/* -----------------------------------------------
+メインヴィジュアル
+----------------------------------------------- */
+
+  #mainvisual .main-menu{
+    font-size: 100%;
+  }
+
+  #mainvisual .main-menu .menu{
+    margin-left: 12%;
+  }
+
+  #mainvisual .images img{
+    width: 100%;
+    margin-top: 0;
+  }
+
+/* -----------------------------------------------
+ブランド紹介
+----------------------------------------------- */
+
+  #brand-overview .images{
+    width: 100%;
+  }
+
+  #brand-overview .images img{
+    width: 100vw;
+  }
+
+  #concept,
+  #work{
+    display: block;
+  }
+
+  #concept .concept-text,
+  #work .work-text{
+    width: 100%;
+  }
+
+  #concept .concept-text .title,
+  #work .work-text .title{
+    font-size: 100%;
+  }
+
+  #concept .concept-text .subtitle,
+  #work .work-text .subtitle{
+    width: 100%;
+    text-align: center;
+  }
+}
